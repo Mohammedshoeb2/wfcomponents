@@ -1,113 +1,69 @@
-import Image from 'next/image'
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+    <div className="checklist w-[588px] h-[410px] bg-white">
+      <div className="heading px-4 shadow-inner border-b border-gray-200">
+       <h2 className="text-black font-roboto text-base font-medium leading-6 py-6">
+        Add Checklist
+       </h2>
+      </div>
+      <div className="list-div px-6">
+        <div className="first py-5 flex gap-4 border-b border-gray-200  ">
+          <input type="checkbox"  />
+          <p>Use Case Document is Stitched in netlify site in Use Case Matrix</p>
+        </div>
+        <div className="first py-5 flex gap-4 border-b border-gray-200  ">
+          <input type="checkbox" />
+          <p>Screens Design is Stitched in netlify site in Use Case matrix</p>
+        </div>
+        <div className="first py-5 flex gap-4 border-b border-gray-200  ">
+          <input type="checkbox" />
+          <p>Funtional Design Review meeting is done with Technical Team</p>
+        </div>
+        <div className="svg py-5 border-b border-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+  <g clip-path="url(#clip0_181629_11409)">
+    <path d="M17.6337 11.6085H13.3926V7.36738C13.3926 7.24461 13.2922 7.14417 13.1694 7.14417H11.8301C11.7074 7.14417 11.6069 7.24461 11.6069 7.36738V11.6085H7.36585C7.24309 11.6085 7.14264 11.7089 7.14264 11.8317V13.171C7.14264 13.2937 7.24309 13.3942 7.36585 13.3942H11.6069V17.6352C11.6069 17.758 11.7074 17.8585 11.8301 17.8585H13.1694C13.2922 17.8585 13.3926 17.758 13.3926 17.6352V13.3942H17.6337C17.7565 13.3942 17.8569 13.2937 17.8569 13.171V11.8317C17.8569 11.7089 17.7565 11.6085 17.6337 11.6085Z" fill="#F0F0F0"/>
+    <path d="M12.5 0C5.5971 0 0 5.5971 0 12.5C0 19.4029 5.5971 25 12.5 25C19.4029 25 25 19.4029 25 12.5C25 5.5971 19.4029 0 12.5 0ZM12.5 22.8795C6.76897 22.8795 2.12054 18.231 2.12054 12.5C2.12054 6.76897 6.76897 2.12054 12.5 2.12054C18.231 2.12054 22.8795 6.76897 22.8795 12.5C22.8795 18.231 18.231 22.8795 12.5 22.8795Z" fill="#F0F0F0"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_181629_11409">
+      <rect width="25" height="25" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="btn relative">
+        <a href="#">
+        <button className="rounded rounded-sm flex py-1 px-4 mt-6 justify-center items-center   bg-blue-500 text-white bg-primary-6 absolute right-10  ">Submit</button></a>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+    </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+    <div className="screen2 flex flex-col items-start w-[612px] h-[231px] bg-white mt-20">
+    <div className=" w-full border-b-2 border-gray-200">
+    <h4 className="pl-3 pb-2 text-blue-500 font-roboto text-base font-normal leading-6 ">
+      Stage 4
+    </h4>
+    </div>
+    <div className="w-full border-b-2 border-gray-200">
+      <h5 className="text-pink-300 font-roboto text-base font-normal leading-6 pl-3 pb-1">
+        Stage Name
+      </h5>
+    </div>
+    <div className="w-full border-b-2 border-gray-200">
+      <textarea placeholder="+Add Sub Stage name " className=" px-10 py-2 border-none" cols="70" rows="1"></textarea>
+    </div>
+    <div className="">
+    <textarea placeholder="+Add Check Lists " className=" px-16 pt-2" cols="63" rows="1"></textarea>
+    <div className="btn relative">
+        <a href="#">
+        <button className="rounded rounded-sm flex  py-1  px-4 mt-6 justify-center items-center   bg-blue-500 text-white bg-primary-6 absolute right-10 top-3 ">Add</button></a>
       </div>
-    </main>
+    </div>
+    </div>
+    <div className="div h-10"></div>
+    </>
   )
 }
